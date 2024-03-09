@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.navigationview.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.navigationview.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.navigationview.ui.recyclerview.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detailFragment_to_showbookthingFragment"
+            app:destination="@id/showbookthingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_recyclerview"
+        android:name="com.example.navigationview.ui.recyclerview.RecyclerViewFragment"
+        android:label="fragment_recyclerview"
+        tools:layout="@layout/fragment_recyclerview" />
+    <fragment
+        android:id="@+id/nav_viewpaper"
+        android:name="com.example.navigationview.ui.viewpaper.ViewPaperFragment"
+        android:label="fragment_viewpaper"
+        tools:layout="@layout/fragment_viewpaper" />
+    <fragment
+        android:id="@+id/nav_editbook"
+        android:name="com.example.navigationview.ui.addthing.EditBookFragment"
+        android:label="EditBookFragment" />
+    <fragment
+        android:id="@+id/showbookthingFragment"
+        android:name="com.example.navigationview.ui.ShowbookthingFragment"
+        android:label="fragment_showbookthing"
+        tools:layout="@layout/fragment_showbookthing" />
+    <fragment
+        android:id="@+id/myPageFragment2"
+        android:name="com.example.navigationview.ui.mypage.MyPageFragment"
+        android:label="fragment_my_page"
+        tools:layout="@layout/fragment_my_page" />
+    <fragment
+        android:id="@+id/nav_add"
+        android:name="com.example.navigationview.ui.addthing.addthingFragment"
+        android:label="addthingFragment" />
+    <fragment
+        android:id="@+id/thingFragment2"
+        android:name="com.example.navigationview.ui.thing.ThingFragment"
+        android:label="fragment_thing"
+        tools:layout="@layout/fragment_thing" />
+    <fragment
+        android:id="@+id/billListFragment2"
+        android:name="com.example.navigationview.ui.BillList.BillListFragment"
+        android:label="fragment_bill_list"
+        tools:layout="@layout/fragment_bill_list" />
+    <activity
+        android:id="@+id/manageActivity"
+        android:name="com.example.navigationview.ManageActivity"
+        android:label="activity_manage"
+        tools:layout="@layout/activity_manage" />
+</navigation>

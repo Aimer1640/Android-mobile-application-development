@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_recyclerview">
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.navigationview.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_recyclerview"
+        android:name="com.example.navigationview.ui.recyclerview.RecyclerViewFragment"
+        android:label="fragment_recyclerview"
+        tools:layout="@layout/fragment_recyclerview" />
+    <fragment
+        android:id="@+id/viewpages2Fragment"
+        android:name="com.example.navigationview.ui.viewpages2.viewpages2Fragment"
+        android:label="fragment_viewpages2"
+        tools:layout="@layout/fragment_viewpages2" />
+    <fragment
+        android:id="@+id/myPageFragment"
+        android:name="com.example.navigationview.ui.mypage.MyPageFragment"
+        android:label="fragment_my_page"
+        tools:layout="@layout/fragment_my_page" />
+    <fragment
+        android:id="@+id/billDeatilFragment2"
+        android:name="com.example.navigationview.ui.BillDeail.BillDeatilFragment"
+        android:label="fragment_bill_deatil"
+        tools:layout="@layout/fragment_bill_deatil" />
+    <fragment
+        android:id="@+id/slideshowFragment"
+        android:name="com.example.navigationview.ui.slideshow.SlideshowFragment"
+        android:label="fragment_slideshow"
+        tools:layout="@layout/fragment_slideshow" >
+        <action
+            android:id="@+id/action_slideshowFragment_to_billDeatilFragment2"
+            app:destination="@id/billDeatilFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/thingFragment"
+        android:name="com.example.navigationview.ui.thing.ThingFragment"
+        android:label="fragment_thing"
+        tools:layout="@layout/fragment_thing" />
+    <fragment
+        android:id="@+id/queryBillFragment"
+        android:name="com.example.navigationview.ui.QueryBill.QueryBillFragment"
+        android:label="fragment_query_bill"
+        tools:layout="@layout/fragment_query_bill" />
+    <fragment
+        android:id="@+id/billListFragment2"
+        android:name="com.example.navigationview.ui.BillList.BillListFragment"
+        android:label="fragment_bill_list"
+        tools:layout="@layout/fragment_bill_list" />
+</navigation>

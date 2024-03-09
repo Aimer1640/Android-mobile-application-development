@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/thing"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/billListFragment2"
+        android:icon="@drawable/attribute"
+        android:title="billlist" />
+
+    <item
+        android:id="@+id/queryBillFragment"
+        android:icon="@drawable/total"
+        android:title="total" />
+
+    <item
+        android:id="@+id/myPageFragment"
+        android:icon="@drawable/my"
+        android:title="my" />
+</menu>

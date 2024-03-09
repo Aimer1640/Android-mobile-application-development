@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/myPageFragment2"
+            android:icon="@drawable/my"
+            android:title="my" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/thing"
+            android:title="thing" />
+        <item
+            android:id="@+id/nav_add"
+            android:icon="@drawable/add"
+            android:title="addthing"/>
+        <item
+            android:id="@+id/manageActivity"
+            android:icon="@drawable/attribute"
+            android:title="addbill"/>
+
+
+
+<!--        <item-->
+<!--            android:id="@+id/nav_viewpaper"-->
+<!--            android:icon="@drawable/ic_menu_gallery"-->
+<!--            android:title="ViewPaper" />-->
+
+
+
+<!--        <item-->
+<!--            android:id="@+id/grid"-->
+<!--            android:icon="@drawable/ic_menu_gallery"-->
+<!--            android:title="grid" />-->
+    </group>
+</menu>
